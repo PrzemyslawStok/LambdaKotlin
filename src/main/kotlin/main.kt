@@ -14,7 +14,6 @@ fun main(){
     val numbers = IntArray(10){a->a*a}
     val numbers1 = IntArray(5){it*it*it}
 
-
     println(numbers.asList())
     println(numbers1.asList())
 
@@ -27,7 +26,6 @@ fun main(){
     printResult(5){it*it}
 
     printResult2(2,2){a,b->a*a+b*b}
-
 }
 
 fun sub1(a:Int,b:Int):Int{
