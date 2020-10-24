@@ -1,3 +1,6 @@
+import kotlin.math.PI
+import kotlin.math.sin
+
 fun main(){
     val square = {a:Double->a*a}
     val square1: (Double)->Double = {a->a*a}
@@ -10,6 +13,8 @@ fun main(){
 
     val numbers = IntArray(10){a->a*a}
     val numbers1 = IntArray(5){it*it*it}
+
+
     println(numbers.asList())
     println(numbers1.asList())
 }
