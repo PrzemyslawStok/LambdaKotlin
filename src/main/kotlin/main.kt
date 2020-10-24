@@ -19,11 +19,14 @@ fun main(){
     println(numbers1.asList())
 
     val square2 = {a:Int->a*a}
+
     printResult(5,square2)
     printResult(5,{a->a*a})
     printResult(5,{it*it})
     printResult(5){a->a*a}
     printResult(5){it*it}
+
+    printResult2(2,2){a,b->a*a+b*b}
 
 }
 
@@ -33,4 +36,8 @@ fun sub1(a:Int,b:Int):Int{
 
 fun printResult(a:Int,f:(Int)->Int){
     println("Wynikiem działania jest ${f(a)}")
+}
+
+fun printResult2(a:Int,b:Int,f:(Int,Int)->Int){
+    println("Wynikiem działania jest ${f(a,b)}")
 }
