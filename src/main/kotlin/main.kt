@@ -26,6 +26,7 @@ fun main(){
     printResult(5){it*it}
 
     printResult2(2,2){a,b->a*a+b*b}
+    printResult2(2,5){a,b->a*b+2}
 }
 
 fun sub1(a:Int,b:Int):Int{
