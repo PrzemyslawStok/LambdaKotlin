@@ -7,4 +7,9 @@ class Student(val name: String, val surname:String) {
     override fun toString(): String {
         return "Student(name='$name', surname='$surname')"
     }
+
+    fun createStudents():List<Student>?{
+
+        return null
+    }
 }

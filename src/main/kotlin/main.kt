@@ -29,8 +29,12 @@ fun main(){
     printResult2(2,5){a,b->a*b+2}
 
     val student = Student("Przemysław","Stokłosa")
+    var student1:Student? = null
     student.printStudent()
     println(student)
+    println(student1)
+    student1 = Student("Przemysław1","Stokłosa1")
+    println(student1)
 }
 
 fun sub1(a:Int,b:Int):Int{
