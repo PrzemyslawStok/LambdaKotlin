@@ -8,8 +8,9 @@ class Student(val name: String, val surname:String) {
         return "Student(name='$name', surname='$surname')"
     }
 
-    fun createStudents():List<Student>?{
+    fun createStudents(n:Int):List<Student>{
+        val list:List<Student> = listOf()
 
-        return null
+        return list
     }
 }
