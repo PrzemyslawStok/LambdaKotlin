@@ -27,6 +27,10 @@ fun main(){
 
     printResult2(2,2){a,b->a*a+b*b}
     printResult2(2,5){a,b->a*b+2}
+
+    val student = Student("Przemysław","Stokłosa")
+    student.printStudent()
+    println(student)
 }
 
 fun sub1(a:Int,b:Int):Int{
