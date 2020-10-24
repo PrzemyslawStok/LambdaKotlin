@@ -35,6 +35,8 @@ fun main(){
     println(student1)
     student1 = Student("Przemysław1","Stokłosa1")
     println(student1)
+
+    println(student.createStudents(5,"Przemysław","Stokłosa"){"${it*it}"})
 }
 
 fun sub1(a:Int,b:Int):Int{
