@@ -40,6 +40,13 @@ fun main(){
 
     val g:(Int,String)->String = {a,b->"$b: ${a*a}"}
     println(g(10,"Wynik działania"))
+
+    val array1 = IntArray(10){
+        val value = it*it
+        println("Zainicjalizowano element: $value")
+        value
+    }
+    println(array1.asList())
 }
 
 fun sub1(a:Int,b:Int):Int{
