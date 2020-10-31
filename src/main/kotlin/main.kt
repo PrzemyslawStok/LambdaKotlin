@@ -37,6 +37,9 @@ fun main(){
     println(student1)
 
     println(student.createStudents(5,"Przemysław","Stokłosa"){"${it*it}"})
+
+    val g:(Int,String)->String = {a,b->"$b: ${a*a}"}
+    println(g(10,"Wynik działania"))
 }
 
 fun sub1(a:Int,b:Int):Int{
@@ -49,4 +52,14 @@ fun printResult(a:Int,f:(Int)->Int){
 
 fun printResult2(a:Int,b:Int,f:(Int,Int)->Int){
     println("Wynikiem działania jest ${f(a,b)}")
+}
+
+fun example(){
+    val f:(Int,Int,Double)->String = {
+            a:Int,b:Int,c:Double->
+        println("Przykładowy napis")
+        "$a $b $c"
+    }
+
+    println(f(1,2,5.0))
 }
